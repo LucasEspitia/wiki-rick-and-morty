@@ -1,0 +1,9 @@
+{
+  "name": "Wikipedia de Rick y Morty",
+  "short_name": "RickApp",
+  "description": "Una app sobre el universo de Rick y Morty",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#39FF14"
+}

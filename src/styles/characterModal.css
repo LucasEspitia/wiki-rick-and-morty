@@ -1,0 +1,123 @@
+.personaje-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+  }
+  
+  /* Animaciones de entrada/salida */
+  .personaje-modal-content {
+    background-color: #272b33;
+    color: #ffffff;
+    border: 2px solid #39ff14;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: scaleX(0.5);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform-origin: left center;
+  }
+  
+  .personaje-modal-content.open {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  
+  .personaje-modal-content.closing {
+    opacity: 0;
+    transform: scaleX(0.5);
+  }
+  
+  /* Disposición en horizontal */
+  .personaje-modal-content.horizontal {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  /* Animación para imagen */
+  .personaje-modal-image {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInLeft 0.4s ease forwards;
+    animation-delay: 0.15s;
+  }
+  
+  .personaje-modal-image img {
+    width: 260px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Animación para detalles */
+  .personaje-modal-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInRight 0.4s ease forwards;
+    animation-delay: 0.25s;
+  }
+  
+  .personaje-modal-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--title-color);
+    margin-bottom: 15px;
+  }
+  
+  .personaje-modal-details p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Estilos para etiquetas y valores */
+  .personaje-modal-label {
+    color: var(--title-color);
+    font-weight: normal;
+  }
+  
+  .personaje-modal-value {
+    color: white; /* negro */
+  }
+  
+  /* Botón de cierre */
+  .personaje-close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #9d00ff;
+    border: none;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Animaciones keyframes */
+  @keyframes fadeInLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

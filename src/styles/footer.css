@@ -1,0 +1,56 @@
+footer {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+footer h1 a {
+  color: var(--title-color);
+}
+
+footer h1 a:hover {
+  color: var(--button-hover-background);
+}
+.contenedor-footer {
+  width: 100%;
+}
+.seccion-creado {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.seccion-creado ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+footer hr {
+  display: flex;
+  justify-self: center;
+  width: 72%;
+  height: 5px;
+  background-color: var(--title-color);
+}
+
+.extras {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.extras a:hover {
+  color: var(--button-hover-background);
+}
+
+.extras a:focus {
+  color: var(--button-hover-background);
+}
