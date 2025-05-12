@@ -5,7 +5,7 @@ import TemporadaCard from "../components/TemporadaCard";
 import AsideNav from "../components/AsideNav";
 import PersonajeCard from "../components/PersonajeCard";
 
-import { Row, Col, Image, Button } from "react-bootstrap";
+import { Row, Col, Image } from "react-bootstrap";
 import { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -63,7 +63,6 @@ function Home() {
         className="parte-principal"
         aria-labelledby="titulo-inicio"
         tabIndex="0"
-        role="region"
       >
         <h2 id="titulo-inicio" className="visually-hidden">
           Inicio - Video de Rick y Morty escapando en su nave de un portal.
@@ -97,7 +96,7 @@ function Home() {
         className="parte-descriptiva"
         ref={descripcionRef}
         aria-labelledby="titulo-descripcion"
-        role="region"
+        no
       >
         <h1 id="titulo-descripcion">Bienvenid@ a la Wiki de Rick y Morty</h1>
         <p>
@@ -110,7 +109,6 @@ function Home() {
         id="episodios-main"
         className="parte-episodios"
         aria-labelledby="titulo-episodios"
-        role="region"
       >
         <h1 id="titulo-episodios">Episodios</h1>
         <Row className="justify-content-center">
@@ -132,7 +130,6 @@ function Home() {
         id="personajes"
         className="parte-personajes"
         aria-labelledby="titulo-personajes"
-        role="region"
       >
         <h1 id="titulo-personajes">Personajes</h1>
 
@@ -164,7 +161,6 @@ function Home() {
         id="ubicaciones"
         className="parte-ubicaciones"
         aria-labelledby="titulo-ubicaciones"
-        role="region"
       >
         <h1 id="titulo-ubicaciones">Ubicaciones</h1>
         <div className="seccion-interna-ubicaciones">
