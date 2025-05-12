@@ -123,7 +123,6 @@ const Characters = () => {
         currentPage={currentPage}
         totalPages={totalPages}
         onPageChange={setCurrentPage}
-        onKeyDown={(e) => handleKeyDown(e, index, character)}
         isModalOpen={!!selectedCharacter}
       />
 
