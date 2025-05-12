@@ -1,41 +1,12 @@
 import AutorCard from "../components/AutorCard";
 
-import fotoLucas from "../assets/autores/foto_Lucas.jpg";
-import fotoAnder from "../assets/autores/foto_Ander.jpg";
-import fotoAlberto from "../assets/autores/foto_Alberto.jpg";
-import fotoFelipe from "../assets/autores/foto_Felipe.png";
-
 import { Row, Col } from "react-bootstrap";
 
 import "../styles/nosotros.css";
 
+import autores from "../constants/autores";
+
 function Nosotros() {
-  const autores = [
-    {
-      nombre: "Lucas Espitia",
-      foto: fotoLucas,
-      bio: "Codifico, luego existo... o al menos lo intento",
-    },
-
-    {
-      nombre: "Ander Etxabe",
-      foto: fotoAnder,
-      bio: "Rick y morty >> Los Simpson",
-    },
-
-    {
-      nombre: "Alberto Bellera",
-      foto: fotoAlberto,
-      bio: "",
-    },
-
-    {
-      nombre: "Felipe Santos",
-      foto: fotoFelipe,
-      bio: "Web developer, cineasta enjoer",
-    },
-  ];
-
   return (
     <div className="layout-principal">
       <section

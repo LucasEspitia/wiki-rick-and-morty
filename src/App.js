@@ -11,6 +11,7 @@ import Episodios from "./pages/Episodios";
 import Ubicaciones from "./pages/Ubicaciones";
 import Personajes from "./pages/Personajes";
 import Nosotros from "./pages/Nosotros";
+import Faqs from "./pages/Faqs";
 
 import "./styles/app.css";
 
@@ -18,7 +19,7 @@ import rutas from "./constants/rutas";
 
 function App() {
   return (
-    <Router basename="/wiki-rick-and-morty">
+    <Router>
       <ScrollToTop />
       <div className="layout">
         <header role="banner">
@@ -33,6 +34,7 @@ function App() {
             <Route path={rutas.ubicaciones} element={<Ubicaciones />} />
             <Route path={rutas.episodios} element={<Episodios />} />
             <Route path={rutas.nosotros} element={<Nosotros />} />
+            <Route path={rutas.faqs} element={<Faqs />} />
             <Route
               path="*"
               element={<h1 className="not-found">Not Found...</h1>}

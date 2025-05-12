@@ -4,7 +4,7 @@ const rutas = {
   ubicaciones: "/Ubicaciones",
   episodios: "/Episodios",
   nosotros: "/AcercaDeNosotros",
-  faq: "/FaQ",
+  faqs: "/Faqs",
 };
 
 export default rutas;

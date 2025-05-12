@@ -104,7 +104,7 @@ function NavBar() {
             role="menuitem"
             tabIndex={isMobile && !menuAbierto ? -1 : 0}
           >
-            Menu principal
+            Menú principal
           </Link>
         </li>
         <li role="none">

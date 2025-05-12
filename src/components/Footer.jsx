@@ -31,11 +31,19 @@ function Footer() {
         {location.pathname !== rutas.nosotros && (
           <div className="seccion-creado">
             <h3 aria-hidden={true}>Created by</h3>
-            <ul raria-hidden={true}>
-              <li aria-hidden={true}>Lucas Espitia</li>
-              <li aria-hidden={true}>Ander Etxabe</li>
-              <li aria-hidden={true}>Alberto Bellera</li>
-              <li aria-hidden={true}>Felipe Santos</li>
+            <ul role="list" aria-hidden={true}>
+              <li role="listItem" aria-hidden={true}>
+                Lucas Espitia
+              </li>
+              <li role="listItem" aria-hidden={true}>
+                Ander Etxabe
+              </li>
+              <li role="listItem" aria-hidden={true}>
+                Alberto Bellera
+              </li>
+              <li role="listItem" aria-hidden={true}>
+                Felipe Santos
+              </li>
             </ul>
           </div>
         )}
@@ -53,10 +61,10 @@ function Footer() {
           )}
 
           <Link
-            to={rutas.faq}
+            to={rutas.faqs}
             aria-label="Ir a la sección de preguntas frecuentes"
           >
-            FaQ
+            FAQs
           </Link>
 
           <Link

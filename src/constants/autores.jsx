@@ -7,25 +7,25 @@ const autores = [
   {
     nombre: "Lucas Espitia",
     foto: fotoLucas,
-    bio: "",
+    bio: "Codifico, luego existo... o al menos lo intento",
   },
 
   {
     nombre: "Ander Etxabe",
     foto: fotoAnder,
-    bio: "Rick y morty >> Los Simpson",
+    bio: "Rick & Morty >>> Los Simpson",
   },
 
   {
     nombre: "Alberto Bellera",
     foto: fotoAlberto,
-    bio: "",
+    bio: "Tempus fugit, carpe diem et Rick y Morty",
   },
 
   {
     nombre: "Felipe Santos",
     foto: fotoFelipe,
-    bio: "Web developer, cineasta enjoer",
+    bio: "Web developer, cineasta enjoyer",
   },
 ];
 
