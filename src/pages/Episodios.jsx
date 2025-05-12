@@ -13,7 +13,6 @@ export default function Episodios() {
         id="parte-episodios-inicio"
         className="parte-episodios"
         aria-labelledby="titulo-episodios"
-        role="region"
         style={{ backgroundColor: "none !important" }}
       >
         <h1 id="titulo-episodios">Episodios</h1>
