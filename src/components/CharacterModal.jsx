@@ -38,7 +38,7 @@ const CharacterModal = ({ character, onClose }) => {
     };
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [handleClose]);
 
   // Contener el tab, aunque con flechas si se sale del focus (Modo narrador), Para que cierre el personaje
   const handleTabKey = (e) => {

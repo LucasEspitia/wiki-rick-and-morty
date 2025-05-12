@@ -18,7 +18,7 @@ import rutas from "./constants/rutas";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/wiki-rick-and-morty">
       <ScrollToTop />
       <div className="layout">
         <header role="banner">
