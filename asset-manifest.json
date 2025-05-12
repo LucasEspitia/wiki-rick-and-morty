@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wiki-rick-and-morty/static/css/main.0fcca5b5.css",
-    "main.js": "/wiki-rick-and-morty/static/js/main.383b52ce.js",
+    "main.js": "/wiki-rick-and-morty/static/js/main.1bd6491a.js",
     "static/media/fondo_en_movimiento_ufo.mp4": "/wiki-rick-and-morty/static/media/fondo_en_movimiento_ufo.c43df5500eef9a1c272d.mp4",
     "static/media/foto_Felipe.png": "/wiki-rick-and-morty/static/media/foto_Felipe.b49ca7cdccc475b6374b.png",
     "static/media/saliendo_portal_rickyMorty.gif": "/wiki-rick-and-morty/static/media/saliendo_portal_rickyMorty.dd0d28880e860d7d746b.gif",
@@ -18,10 +18,10 @@
     "index.html": "/wiki-rick-and-morty/index.html",
     "static/media/Polygon.svg": "/wiki-rick-and-morty/static/media/Polygon.62b96faa72580e3be9c4775815a58166.svg",
     "main.0fcca5b5.css.map": "/wiki-rick-and-morty/static/css/main.0fcca5b5.css.map",
-    "main.383b52ce.js.map": "/wiki-rick-and-morty/static/js/main.383b52ce.js.map"
+    "main.1bd6491a.js.map": "/wiki-rick-and-morty/static/js/main.1bd6491a.js.map"
   },
   "entrypoints": [
     "static/css/main.0fcca5b5.css",
-    "static/js/main.383b52ce.js"
+    "static/js/main.1bd6491a.js"
   ]
 }
