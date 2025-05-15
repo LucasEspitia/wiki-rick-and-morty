@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import poligono from "../assets/elementos/Polygon.svg";
 
 import "../styles/header.css";
+import "../styles/episodios.css";
 
 import rutas from "../constants/rutas";
 
@@ -13,7 +13,6 @@ function NavBar() {
   const [isMobile, setIsMobile] = useState(
     window.innerWidth < MOBILE_BREAKPOINT
   );
-  const [mostrarTemporadas, setMostrarTemporadas] = useState(false);
 
   const menuRef = useRef(null);
   const toggleButtonRef = useRef(null);
@@ -92,7 +91,9 @@ function NavBar() {
       <ul
         ref={menuRef}
         id="menu-principal"
-        className={menuAbierto || !isMobile ? "show" : ""}
+        className={
+          menuAbierto || !isMobile ? "show main-header" : "main-header"
+        }
         role="menu"
         aria-hidden={isMobile ? !menuAbierto : false}
       >
@@ -127,42 +128,15 @@ function NavBar() {
             Ubicaciones
           </Link>
         </li>
-        <li
-          className="submenu"
-          onMouseEnter={() => setMostrarTemporadas(true)}
-          onMouseLeave={() => setMostrarTemporadas(false)}
-          id="episodios"
-          role="none"
-        >
+        <li className="submenu" id="episodios" role="none">
           <Link
             to={rutas.episodios}
             onClick={closeMenu}
             role="menuitem"
             tabIndex={isMobile && !menuAbierto ? -1 : 0}
           >
-            Episodios{" "}
-            <img src={poligono} height="10px" alt="" aria-hidden="true" />
+            Episodios
           </Link>
-
-          {mostrarTemporadas && (
-            <ul className="dropdown">
-              <li>
-                <Link to={`${rutas.episodios}/temporada1`}> Temporada 1</Link>
-              </li>
-              <li>
-                <Link to={`${rutas.episodios}/temporada2`}> Temporada 2</Link>
-              </li>
-              <li>
-                <Link to={`${rutas.episodios}/temporada3`}> Temporada 3</Link>
-              </li>
-              <li>
-                <Link to={`${rutas.episodios}/temporada4`}> Temporada 4</Link>
-              </li>
-              <li>
-                <Link to={`${rutas.episodios}/temporada5`}> Temporada 5</Link>
-              </li>
-            </ul>
-          )}
         </li>
 
         <li role="none">

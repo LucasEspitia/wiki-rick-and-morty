@@ -15,35 +15,17 @@ ul {
   position: relative;
 }
 
-.navbar ul {
+.navbar ul.main-header {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 70px;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-align: center;
   line-height: normal;
-}
-
-/*SUBMENU DE TEMPORADAS*/
-
-.dropdown {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: black;
-  padding: 8px 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-}
-
-.dropdown li {
-  margin: 0;
-  padding: 6px 12px;
-  white-space: nowrap;
 }
 
 .submenu {
@@ -68,7 +50,7 @@ ul {
   transition: all 0.3s ease;
 }
 
-.navbar ul li a:hover {
+.navbar ul li a:hover:not(.temps-menu-selector a) {
   color: var(--button-hover-background);
   box-shadow: 0 0 15px rgba(170, 213, 25, 0.8);
   padding: 4px 8px;

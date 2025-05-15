@@ -2,8 +2,6 @@ import AutorCard from "../components/AutorCard";
 
 import { Row, Col } from "react-bootstrap";
 
-import "../styles/nosotros.css";
-
 import autores from "../constants/autores";
 
 function Nosotros() {
@@ -25,7 +23,12 @@ function Nosotros() {
               xl={3}
               className="autor-col d-flex justify-content-center"
             >
-              <AutorCard nombre={a.nombre} foto={a.foto} bio={a.bio} />
+              <AutorCard
+                nombre={a.nombre}
+                foto={a.foto}
+                bio={a.bio}
+                githubUser={a.githubUser}
+              />
             </Col>
           ))}
         </Row>

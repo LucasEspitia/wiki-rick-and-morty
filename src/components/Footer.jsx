@@ -81,6 +81,10 @@ function Footer() {
               ? "Volver arriba"
               : "Ir al inicio"}
           </Link>
+
+          <Link to={rutas.contacto} aria-label="Ir a la sección de contacto">
+            Contacto
+          </Link>
         </div>
       </div>
     </footer>

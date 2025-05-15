@@ -29,39 +29,40 @@ const Faqs = () => {
         "¡Por supuesto! Si tienes ideas o sugerencias, no dudes en ponerte en contacto con nosotros. Equipo 10: codebreakers. We need you!",
     },
     {
-        pregunta: "¿Rick ha aprobado esta web?",
-        respuesta: "No lo sé, Rick, parece falso... Bueno, ha dicho algo sobre «no perder el tiempo con tonterías», pero creemos que significa que le encanta nuestra web.",
+      pregunta: "¿Rick ha aprobado esta web?",
+      respuesta:
+        "No lo sé, Rick, parece falso... Bueno, ha dicho algo sobre «no perder el tiempo con tonterías», pero creemos que significa que le encanta nuestra web.",
     },
     {
-        pregunta: "¿Puedo encontrar a mi Morty perdido aquí?",
-        respuesta: "Si tu Morty está en la API, seguro que lo encuentras. Si no, prueba en la Ciudadela de los Ricks.",
+      pregunta: "¿Puedo encontrar a mi Morty perdido aquí?",
+      respuesta:
+        "Si tu Morty está en la API, seguro que lo encuentras. Si no, prueba en la Ciudadela de los Ricks.",
     },
     {
-        pregunta: "¿Esta web tiene portales interdimensionales?",
-        respuesta: "Todavía no, pero estamos trabajando en ello, danos tiempo. ¡Necesitamos más cristales verdes!",
+      pregunta: "¿Esta web tiene portales interdimensionales?",
+      respuesta:
+        "Todavía no, pero estamos trabajando en ello, danos tiempo. ¡Necesitamos más cristales verdes!",
     },
     {
-        pregunta: "¿Qué pasa si no entiendo un chiste de Rick y Morty?",
-        respuesta: "Significa que necesitas un IQ más alto... o igual simplemente verte la serie.",
+      pregunta: "¿Qué pasa si no entiendo un chiste de Rick y Morty?",
+      respuesta:
+        "Significa que necesitas un IQ más alto... o igual simplemente verte la serie.",
     },
     {
-        pregunta: "¿Por qué hay tanto humor en esta web?",
-        respuesta: "Lo sentimos, es parte de la experiencia y de la serie. Si no te gusta, puedes ir a ver a Karlos Arguiñano.",
+      pregunta: "¿Por qué hay tanto humor en esta web?",
+      respuesta:
+        "Lo sentimos, es parte de la experiencia y de la serie. Si no te gusta, puedes ir a ver a Karlos Arguiñano.",
     },
   ];
 
   return (
     <div className="layout-principal">
-      <section
-        id="faqs"
-        className="parte-faqs"
-        aria-labelledby="titulo-faqs"
-      >
+      <section id="faqs" className="parte-faqs" aria-labelledby="titulo-faqs">
         <h1 id="titulo-faqs">Preguntas Frecuentes</h1>
         <br aria-hidden={true} />
         <div className="faqs-container">
           {faqs.map((faq, index) => (
-            <div key={index} className="faq-item">
+            <div key={index} className="faq-item" tabIndex={0}>
               <h2 className="faq-question">{faq.pregunta}</h2>
               <p className="faq-answer">{faq.respuesta}</p>
             </div>

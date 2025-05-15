@@ -1,0 +1,85 @@
+.contacto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin: 5px auto;
+}
+
+.titulo-contacto {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.form-contacto-container {
+  width: 650px;
+  max-width: 1000px;
+  height: 500px;
+  background-color: #272b33;
+  border: 3px solid #39ff14;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  font-size: 1.2rem;
+}
+
+.form-contacto {
+  width: 600px;
+  max-width: 800px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #ccff00;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.label-form {
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #39ff14;
+}
+
+.input-form {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid #9d00ff;
+  background-color: #1c1f26;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-form:focus {
+  border-color: #39ff14;
+  box-shadow: 0 0 10px #39ff14;
+}
+
+button[type="submit"] {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #9d00ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #ccff00;
+  color: #272b33;
+  transform: scale(1.05);
+}

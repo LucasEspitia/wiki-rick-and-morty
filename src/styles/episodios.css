@@ -1,0 +1,111 @@
+.temporada-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 5px auto;
+}
+
+.episodios-layout {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.imagen-temporada img {
+  margin-top: 1.2rem;
+  margin-right: 2rem;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 255, 0, 0.3);
+}
+
+.episodios-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 600px) {
+  .episodios-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.episodio-list-item {
+  list-style: none;
+  background-color: #272b33;
+  border: 1px solid #39ff14;
+  border-radius: 8px;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.episodio-list-item:hover {
+  background-color: #39ff14;
+  color: #000000;
+}
+
+.episodio-list-item:focus {
+  outline: none;
+  background-color: #ccff00;
+  color: #000000;
+}
+
+.parte-titulo-episodios {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.boton-temporada {
+  width: 200px;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: black;
+  background-color: var(--button-background);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.boton-temporada:hover,
+.seleccionado {
+  background-color: var(--button-hover-background);
+}
+
+.boton-temporada:select .temps-menu-selector {
+  gap: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(13, 2, 2);
+  width: 200px;
+  text-align: center;
+  z-index: 10;
+}
+
+.temps-menu-list-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.temps-menu-list-item:hover {
+  color: var(--button-hover-background);
+}
+
+.selector-temporada {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los ítems */
+  align-items: center; /* Centra verticalmente los ítems */
+  gap: 30px;
+}

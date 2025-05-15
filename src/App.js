@@ -12,6 +12,7 @@ import Ubicaciones from "./pages/Ubicaciones";
 import Personajes from "./pages/Personajes";
 import Nosotros from "./pages/Nosotros";
 import Faqs from "./pages/Faqs";
+import Contacto from "./pages/Contacto";
 
 import "./styles/app.css";
 
@@ -35,9 +36,10 @@ function App() {
             <Route path={rutas.episodios} element={<Episodios />} />
             <Route path={rutas.nosotros} element={<Nosotros />} />
             <Route path={rutas.faqs} element={<Faqs />} />
+            <Route path={rutas.contacto} element={<Contacto />} />
             <Route
               path="*"
-              element={<h1 className="not-found">Not Found...</h1>}
+              element={<h1 className="not-found">404 Not Found...</h1>}
             />
           </Routes>
         </main>

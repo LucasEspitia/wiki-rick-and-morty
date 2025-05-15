@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Card } from "react-bootstrap";
 function TemporadaCard({ portada, nombre, index }) {
   return (
-    <Link to={`/episodios/temporada${index + 1}`} className="card-link">
+    <Link to={`/episodios?temporada=${index + 1}`} className="card-link">
       <Card
         className="temporada-card text-center w-100"
         aria-label={`Ver episodios de la  ${nombre}`}

@@ -1,4 +1,6 @@
 .autor-card {
+  display: flex;
+  justify-content: center;
   width: 300px;
   margin: 0 auto;
   background-color: #3c3e44;
@@ -21,4 +23,17 @@
 .autor-col {
   margin-bottom: 2rem;
   padding: 0 3.5rem;
+}
+
+.github-profile-linker {
+  display: flex;
+  cursor: auto;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%; /* o el contenedor que lo aloje */
+}
+
+.github-profile-icon {
+  margin-left: auto;
+  cursor: pointer;
 }

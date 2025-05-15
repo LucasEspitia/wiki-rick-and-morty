@@ -5,6 +5,7 @@ const rutas = {
   episodios: "/Episodios",
   nosotros: "/AcercaDeNosotros",
   faqs: "/Faqs",
+  contacto: "/Contacto",
 };
 
 export default rutas;

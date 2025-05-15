@@ -8,24 +8,28 @@ const autores = [
     nombre: "Lucas Espitia",
     foto: fotoLucas,
     bio: "Codifico, luego existo... o al menos lo intento",
+    githubUser: "lucasespitia",
   },
 
   {
     nombre: "Ander Etxabe",
     foto: fotoAnder,
     bio: "Rick & Morty >>> Los Simpson",
+    githubUser: "Etxabe",
   },
 
   {
     nombre: "Alberto Bellera",
     foto: fotoAlberto,
     bio: "Tempus fugit, carpe diem et Rick y Morty",
+    githubUser: "abellerin",
   },
 
   {
     nombre: "Felipe Santos",
     foto: fotoFelipe,
     bio: "Web developer, cineasta enjoyer",
+    githubUser: "666zymandias",
   },
 ];
 
